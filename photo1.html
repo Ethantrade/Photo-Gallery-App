@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery App</title>
+  <link rel="stylesheet" href="photo2.css">
+</head>
+<body>
+  <div class="gallery-container">
+    <h1>Photo Gallery</h1>
+    <div class="gallery" id="gallery">
+      <img src="classic.jpg" alt="Photo 1" onclick="openModal(this)">
+      <img src="force.jpg" alt="Photo 2" onclick="openModal(this)">
+      <img src="ultimate.jpg" alt="Photo 3" onclick="openModal(this)">
+      <img src="omni.jpeg" alt="Photo 4" onclick="openModal(this)">
+      <img src="x.jpeg" alt="Photo 5" onclick="openModal(this)">
+    </div>
+  </div>
+
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+  </div>
+
+  <script src="photo3.js"></script>
+</body>
+</html>
